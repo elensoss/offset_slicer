@@ -1,0 +1,3 @@
+/home/elen/offset_slicer/build/CMakeFiles/offset_slicer.dir
+/home/elen/offset_slicer/build/CMakeFiles/edit_cache.dir
+/home/elen/offset_slicer/build/CMakeFiles/rebuild_cache.dir
