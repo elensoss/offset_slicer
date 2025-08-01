@@ -105,7 +105,7 @@ int main(int argc, char **argv)
     std::cout << "Skips: " << slicer.n_get_next << std::endl;
 
     // Para cada fatia, aplica o offset e exporta SVG
-   /* for (size_t i = 0; i < slices.size(); ++i) {
+    for (size_t i = 0; i < slices.size(); ++i) {
         SolidSlice& slice = slices[i]; // Remova o 'const'
 
         std::vector<std::vector<Point>> polygons;
@@ -131,13 +131,12 @@ int main(int argc, char **argv)
 
         // Aplica o offset e exporta SVG
         process_polygons(polygons, distances, svg_filename);
-    }*/
+    }
 
-    // Supondo que você já tem slices carregados
-    /*int slice_idx = 178; // por exemplo, o quarto slice
+    // slices carregados - teste com um slice
+    /*int slice_idx = 178;
     auto polygons = extract_polygons_from_slice(slices[slice_idx]);
 
-    // Agora você pode testar process_polygons ou qualquer outra função:
     std::vector<std::vector<double>> distances(polygons.size());
     for (size_t i = 0; i < polygons.size(); ++i)
         distances[i] = std::vector<double>(polygons[i].size(), -2.0);
